@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="30dp"
+        android:paddingTop="30dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <Switch
+            android:id="@+id/printSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:text="Bluetooth Printer "
+            android:textSize="15dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:textSize="15dp"
+            android:paddingBottom="20dp"
+            android:paddingTop="5dp"
+            android:layout_height="wrap_content" android:id="@+id/printInfo"
+            tools:text="Print info"/>
+        <ProgressBar
+            android:layout_gravity="center"
+            android:visibility="invisible"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp"
+            android:id="@+id/printLoading"/>
+        <Button
+            android:text="Test Printer"
+            android:textSize="15dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:id="@+id/btn_test"/>
+
+    </LinearLayout>
+
+</LinearLayout>
